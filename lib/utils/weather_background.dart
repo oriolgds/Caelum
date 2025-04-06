@@ -6,51 +6,51 @@ class WeatherBackground {
     if (timeOfDay.hour >= 6 && timeOfDay.hour < 12) {
       switch (weatherCondition.toLowerCase()) {
         case 'clear':
-          return 'https://i.imgur.com/8jKQGX3.jpg'; // Amanecer soleado
+          return 'assets/images/weather_backgrounds/morning_clear.jpg';
         case 'rain':
-          return 'https://i.imgur.com/ZKoqHlE.jpg'; // Lluvia matinal
+          return 'assets/images/weather_backgrounds/morning_rain.jpg';
         case 'clouds':
-          return 'https://i.imgur.com/Y2ONpEZ.jpg'; // Nubes matinales
+          return 'assets/images/weather_backgrounds/morning_clouds.jpg';
         case 'snow':
-          return 'https://i.imgur.com/vQGHHAA.jpg'; // Nieve matinal
+          return 'assets/images/weather_backgrounds/morning_snow.jpg';
         case 'thunderstorm':
-          return 'https://i.imgur.com/kJbQPLH.jpg'; // Tormenta matinal
+          return 'assets/images/weather_backgrounds/morning_thunderstorm.jpg';
         default:
-          return 'https://i.imgur.com/8jKQGX3.jpg';
+          return 'assets/images/weather_backgrounds/morning_clear.jpg';
       }
     }
     // Tarde (12:00 - 18:00)
     else if (timeOfDay.hour >= 12 && timeOfDay.hour < 18) {
       switch (weatherCondition.toLowerCase()) {
         case 'clear':
-          return 'https://i.imgur.com/VxQROYx.jpg'; // Día soleado
+          return 'assets/images/weather_backgrounds/afternoon_clear.jpg';
         case 'rain':
-          return 'https://i.imgur.com/IHp8GZs.jpg'; // Lluvia diurna
+          return 'assets/images/weather_backgrounds/afternoon_rain.jpg';
         case 'clouds':
-          return 'https://i.imgur.com/Y2ONpEZ.jpg'; // Nubes diurnas
+          return 'assets/images/weather_backgrounds/afternoon_clouds.jpg';
         case 'snow':
-          return 'https://i.imgur.com/vQGHHAA.jpg'; // Nieve diurna
+          return 'assets/images/weather_backgrounds/afternoon_snow.jpg';
         case 'thunderstorm':
-          return 'https://i.imgur.com/kJbQPLH.jpg'; // Tormenta diurna
+          return 'assets/images/weather_backgrounds/afternoon_thunderstorm.jpg';
         default:
-          return 'https://i.imgur.com/VxQROYx.jpg';
+          return 'assets/images/weather_backgrounds/afternoon_clear.jpg';
       }
     }
     // Noche (18:00 - 6:00)
     else {
       switch (weatherCondition.toLowerCase()) {
         case 'clear':
-          return 'https://i.imgur.com/4tKjFeH.jpg'; // Noche despejada
+          return 'assets/images/weather_backgrounds/night_clear.jpg';
         case 'rain':
-          return 'https://i.imgur.com/IHp8GZs.jpg'; // Lluvia nocturna
+          return 'assets/images/weather_backgrounds/night_rain.jpg';
         case 'clouds':
-          return 'https://i.imgur.com/Y2ONpEZ.jpg'; // Nubes nocturnas
+          return 'assets/images/weather_backgrounds/night_clouds.jpg';
         case 'snow':
-          return 'https://i.imgur.com/vQGHHAA.jpg'; // Nieve nocturna
+          return 'assets/images/weather_backgrounds/night_snow.jpg';
         case 'thunderstorm':
-          return 'https://i.imgur.com/kJbQPLH.jpg'; // Tormenta nocturna
+          return 'assets/images/weather_backgrounds/night_thunderstorm.jpg';
         default:
-          return 'https://i.imgur.com/4tKjFeH.jpg';
+          return 'assets/images/weather_backgrounds/night_clear.jpg';
       }
     }
   }

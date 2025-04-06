@@ -54,7 +54,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 onRefresh: () => weatherProvider.fetchWeatherData(),
               ),
               SliverFillRemaining(
-                child: CurrentWeather(weather: weatherProvider.currentWeather),
+                child: CurrentWeather(
+                  weather: weatherProvider.currentWeather,
+                  hourlyForecast: weatherProvider.hourlyForecast,
+                ),
               ),
             ],
           );

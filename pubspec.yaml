@@ -47,7 +47,8 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,7 +64,22 @@ flutter:
   assets:
     - .env
     - assets/images/weather_backgrounds/
-    - assets/images/
+    - assets/images/logos/
+    - assets/images/weather_backgrounds/morning_clear.jpg
+    - assets/images/weather_backgrounds/morning_rain.jpg
+    - assets/images/weather_backgrounds/morning_clouds.jpg
+    - assets/images/weather_backgrounds/morning_snow.jpg
+    - assets/images/weather_backgrounds/morning_thunderstorm.jpg
+    - assets/images/weather_backgrounds/afternoon_clear.jpg
+    - assets/images/weather_backgrounds/afternoon_rain.jpg
+    - assets/images/weather_backgrounds/afternoon_clouds.jpg
+    - assets/images/weather_backgrounds/afternoon_snow.jpg
+    - assets/images/weather_backgrounds/afternoon_thunderstorm.jpg
+    - assets/images/weather_backgrounds/night_clear.jpg
+    - assets/images/weather_backgrounds/night_rain.jpg
+    - assets/images/weather_backgrounds/night_clouds.jpg
+    - assets/images/weather_backgrounds/night_snow.jpg
+    - assets/images/weather_backgrounds/night_thunderstorm.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -90,3 +106,22 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+# Configuración para generar iconos de la aplicación
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logos/logo.jpeg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/logos/logo.jpeg"
+    background_color: "#FFFFFF"
+    theme_color: "#78A7FF"
+  windows:
+    generate: true
+    image_path: "assets/images/logos/logo.jpeg"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/logos/logo.jpeg"
